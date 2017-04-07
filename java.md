@@ -14,8 +14,8 @@
 
 
 # Tasks
-## 1-2. Complete the following tasks: (~90 mins)
-
+## 1-3. Complete the following tasks: (~90 mins)
+- [Odd Average](oddavg/OddAvg.java)
 - [Copy](copy/Copy.java)
 - [BlackJack](blackjack/BlackJack.java)
 
@@ -30,7 +30,7 @@ The application is accepted if:
 
 ## 4. Question time! (~10 mins) [4p]
 
-### Describe a method! Show the necessary parts and how are them called! [2p]
+### Describe each building block of a method! [2p]
 #### Your answer:
 [add your answer here]
 
