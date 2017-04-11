@@ -14,7 +14,8 @@ deck = Deck(12)
 print(deck)
 # Should print out:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
-print(deck.draw())
+top_card = deck.draw()
+print(top_card)
 print(deck)
 # Should print out:
 # Queen Spades
