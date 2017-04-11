@@ -10,13 +10,13 @@
 # We should be able to draw the top card which returns the drawn card and also removes it from the deck
 # Deck should be represented as string in this format:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
-Deck deck = Deck(12)
-print(deck)
+deck = Deck(12)
+print(deck.list_of_cards)
 # Should print out:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
-Card drawn = deck.draw()
-print(drawn)
-print(deck)
+top_card = deck.draw()
+print(top_card)
+print(deck.list_of_cards)
 # Should print out:
 # Queen Spades
 # 11 cards - 3 Clubs, 3 Diamonds, 3 Hearts, 2 Spades
