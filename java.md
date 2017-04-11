@@ -30,11 +30,21 @@ The application is accepted if:
 
 ## 4. Question time! (~10 mins) [4p]
 
-### Describe each building block of a method! [2p]
+### Name each building block of a method! [2p]
+
+![anatomy](anatomy/AnatomyJava.png)
+
 #### Your answer:
-[add your answer here]
+[add your answer here]   
+1:   
+2:   
+3:   
+4:   
+5:   
+6:   
+7:   
+8:   
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
 [add your answer here]
-
