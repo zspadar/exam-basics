@@ -11,12 +11,11 @@
 # Deck should be represented as string in this format:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
 deck = Deck(12)
-print(deck.list_of_cards)
+print(deck)
 # Should print out:
 # 12 cards -  3 Clubs, 3 Diamonds, 3 Hearts, 3 Spades
-top_card = deck.draw()
-print(top_card)
-print(deck.list_of_cards)
+print(deck.draw())
+print(deck)
 # Should print out:
 # Queen Spades
 # 11 cards - 3 Clubs, 3 Diamonds, 3 Hearts, 2 Spades
