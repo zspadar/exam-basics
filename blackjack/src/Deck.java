@@ -9,8 +9,9 @@ public class Deck {
   private ArrayList<Card> cards;
   private ArrayList<String> colors;
 
-  public Deck(int number {
-    colors = new ArrayList<>();
+  public Deck(int number) {
+    this.cards = new ArrayList<>();
+    this.colors = new ArrayList<>();
     colors.add("Clubs");
     colors.add("Diamonds");
     colors.add("Hearts");
@@ -21,9 +22,6 @@ public class Deck {
     }
     createDeck();
   }
-
-
-
 
   private void createDeck() {
     for (int i = 0; i < colors.size(); i++) {
@@ -41,9 +39,13 @@ public class Deck {
       cards.add(new Card(colors.get(i), "Queen", 10));
       cards.add(new Card(colors.get(i), "King", 10));
     }
+  }
 
+  public void shuffle() {
     Collections.shuffle(cards);
   }
+
+
   public Card draw() {
     if(cards.size() > 0) {
       Card card = cards.get(cards.size() - 1);
@@ -52,6 +54,6 @@ public class Deck {
     }
     return null;
   }
-  
+
 
 }
