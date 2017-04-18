@@ -7,6 +7,8 @@ import java.util.List;
 public class OddAvg {
   public static void main(String[] args) {
     List<Integer> numbers = new ArrayList<>();
+  }
+  
     public static double oddAvergae(List<Integer> numbers) {
       double oddAvg = 0.;
       int oddSum = 0;
@@ -15,14 +17,13 @@ public class OddAvg {
         if(numbers.get(i) % 2 != 0) {
           oddSum += numbers.get(i);
           counter++;
-
-
         }
+        oddAvg += oddSum / counter;
       }
-
+      return oddAvg;
     }
     // Create a function called `oddAverage` that takes a list of numbers as parameter
     // and returns the average value of the odd numbers in the list
     // Create basic unit tests for it with at least 3 different test cases
-  }
+
 }
