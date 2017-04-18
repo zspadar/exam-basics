@@ -16,30 +16,19 @@ public class Deck {
     colors.add("Diamonds");
     colors.add("Hearts");
     colors.add("Spades");
+    String[] values = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+
 
     for (int i = 0; i < number; i++) {
-      int color = number % (colors.size() - 1);
+      int color = i % (colors.size());
+      int value = cards.size() / colors.size();
+      cards.add(new Card(colors.get(color), values[value]));
+
     }
-    createDeck();
+
   }
 
-  private void createDeck() {
-    for (int i = 0; i < colors.size(); i++) {
-      cards.add(new Card(colors.get(i), "Ace", 1));
-      cards.add(new Card(colors.get(i), "2", 2));
-      cards.add(new Card(colors.get(i), "3", 3));
-      cards.add(new Card(colors.get(i), "4", 4));
-      cards.add(new Card(colors.get(i), "5", 5));
-      cards.add(new Card(colors.get(i), "6", 6));
-      cards.add(new Card(colors.get(i), "7", 7));
-      cards.add(new Card(colors.get(i), "8", 8));
-      cards.add(new Card(colors.get(i), "9", 9));
-      cards.add(new Card(colors.get(i), "10", 10));
-      cards.add(new Card(colors.get(i), "Jack", 10));
-      cards.add(new Card(colors.get(i), "Queen", 10));
-      cards.add(new Card(colors.get(i), "King", 10));
-    }
-  }
+
 
   public void shuffle() {
     Collections.shuffle(cards);
@@ -54,6 +43,7 @@ public class Deck {
     }
     return null;
   }
+
   public String toString () {
     String[] colorStatus = new String[colors.size()];
     for(int i = 0; i < colors.size(); i++) {
@@ -66,10 +56,7 @@ public class Deck {
       colorStatus[i] = String.valueOf(colorSum) + " " + colors.get(i);
     }
     String status = String.format("%d cards - %s", String.valueOf(cards.size()), String.join(", ", colorStatus));
+    return status;
   }
 }
 
-      }
-
-
-}
