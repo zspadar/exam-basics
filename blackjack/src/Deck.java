@@ -19,11 +19,15 @@ public class Deck {
     colors.add("Hearts");
     colors.add("Spades");
 
+    shuffle();
+
     for (int i = 0; i < number; i++) {
       int color = i % (colors.size());
       int value = cards.size() / colors.size();
       cards.add(new Card(colors.get(color), values[value]));
     }
+
+    shuffle();
   }
 
   public void shuffle() {

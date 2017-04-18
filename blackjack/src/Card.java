@@ -11,14 +11,13 @@ public class Card {
     this.value = value;
   }
 
-  public String getColor() {
+  public String getColor(){
     return color;
   }
 
   public String toString() {
     return value + " " + color;
   }
-
 }
 
 
