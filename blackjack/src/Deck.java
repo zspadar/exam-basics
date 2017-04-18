@@ -7,13 +7,17 @@ import java.util.List;
  */
 public class Deck {
   private List<Card> cards;
+  private List<Card> drawnCards;
   private int cardsFromDeck;
 
   public Deck(int cardsFromDeck) {
     this.cardsFromDeck = cardsFromDeck;
     this.cards = new ArrayList<>();
+    this.drawnCards = new ArrayList<>();
     createDeck();
     draw();
+
+
   }
 
   private void createDeck() {
@@ -48,6 +52,13 @@ public class Deck {
       return card;
     }
     return null;
+  }
+  public Card addCrardFromShuffledDeck(int drawnCards){
+    if (drawnCards >= 4) {
+
+    }
+
+    ;
   }
 
 }
