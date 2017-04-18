@@ -18,8 +18,8 @@ public class OddAvg {
         oddSum += numbers.get(i);
         counter++;
       }
-      oddAvg += oddSum / counter;
     }
+    oddAvg += oddSum / counter;
     return oddAvg;
   }
 }

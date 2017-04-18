@@ -15,16 +15,14 @@ public class OddAvgTest {
     System.out.println("Before");
   }
   @Test
-  public double oddAvergae() throws Exception {
-    List<Integer> numbers = new ArrayList<>();
-    numbers.add(1);
-    numbers.add(2);
-    numbers.add(3);
-    numbers.add(4);
-    
-
-    assertEquals(2.0, oddAvergae(numbers));
-
+  public void oddAverage() throws Exception {
+    ArrayList<Integer> nums = new ArrayList<>();
+    nums.add(1);
+    nums.add(2);
+    nums.add(3);
+    nums.add(4);
+    nums.add(5);
+    assertEquals(3.0, OddAvg.oddAvergae(nums), 0);
   }
 
 
