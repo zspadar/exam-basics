@@ -27,7 +27,6 @@ public class Deck {
       cards.add(new Card(colors.get(color), values[value]));
     }
 
-    shuffle();
   }
 
   public void shuffle() {
