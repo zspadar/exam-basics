@@ -8,12 +8,12 @@ import java.nio.file.Files;
 public class Copy {
 
   public static void main(String[] args) throws IOException {
-    if (args[0] == null) {
+    if (args.length == 0) {
       System.out.println("copy [source] [destination]");
-    } else if (args[1] == null) {
+    } else if (args.length == 1) {
       System.out.println("No destination provided");
     } else {
-      
+
     }
   }
 }
