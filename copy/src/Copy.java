@@ -1,15 +1,13 @@
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
+
 
 /**
  * Created by zsuzsanna.padar on 2017. 04. 18..
  */
 public class Copy {
-
-  public static void main(String[] args) throws IOException {
-    
+  public static void main(String[] args) {
     if (args.length == 0) {
       System.out.println("copy [source] [destination]");
     } else if (args.length == 1) {
@@ -19,7 +17,7 @@ public class Copy {
       File destinationFile = new File(args[1]);
       try {
         Files.copy(sourceFile.toPath(), destinationFile.toPath());
-      } catch (IOException e) {
+      } catch(IOException e) {
         System.out.println("Copy error");
       }
     }
