@@ -6,27 +6,26 @@ import java.util.List;
  * Created by zsuzsanna.padar on 2017. 04. 18..
  */
 public class Deck {
-  private List<Card> cards;
-  private List<Card> drawnCards;
-  private int cardsFromDeck;
+  private ArrayList<Card> cards;
+  private ArrayList<String> colors;
 
-  public Deck(int cardsFromDeck) {
-    this.cardsFromDeck = cardsFromDeck;
-    this.cards = new ArrayList<>();
-    this.drawnCards = new ArrayList<>();
-    createDeck();
-    draw();
-
-
-  }
-
-  private void createDeck() {
-    List<String> colors = new ArrayList<>();
-    colors.add("Spades");
-    colors.add("Hearts");
+  public Deck(int number {
+    colors = new ArrayList<>();
     colors.add("Clubs");
     colors.add("Diamonds");
+    colors.add("Hearts");
+    colors.add("Spades");
 
+    for (int i = 0; i < number; i++) {
+      int color = number % (colors.size() - 1);
+    }
+    createDeck();
+  }
+
+
+
+
+  private void createDeck() {
     for (int i = 0; i < colors.size(); i++) {
       cards.add(new Card(colors.get(i), "Ace", 1));
       cards.add(new Card(colors.get(i), "2", 2));
@@ -53,12 +52,6 @@ public class Deck {
     }
     return null;
   }
-  public Card addCrardFromShuffledDeck(int drawnCards){
-    if (drawnCards >= 4) {
-
-    }
-
-    ;
-  }
+  
 
 }
