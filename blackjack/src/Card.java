@@ -3,18 +3,22 @@
  */
 public class Card {
   private String color;
-  private String name;
+  private String value;
 
 
-  public Card(String color, String name, int value) {
+  public Card(String color, String value) {
     this.color = color;
-    this.name = name;
-
+    this.value = value;
   }
 
   public String getColor() {
     return color;
   }
+
+  public String toString() {
+    return value + " " + color;
+  }
+
 }
 
 

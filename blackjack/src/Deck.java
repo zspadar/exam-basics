@@ -23,17 +23,12 @@ public class Deck {
       int color = i % (colors.size());
       int value = cards.size() / colors.size();
       cards.add(new Card(colors.get(color), values[value]));
-
     }
-
   }
-
-
 
   public void shuffle() {
     Collections.shuffle(cards);
   }
-
 
   public Card draw() {
     if(cards.size() > 0) {
