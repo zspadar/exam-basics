@@ -54,6 +54,22 @@ public class Deck {
     }
     return null;
   }
+  public String toString () {
+    String[] colorStatus = new String[colors.size()];
+    for(int i = 0; i < colors.size(); i++) {
+      int colorSum = 0;
+      for(int j = 0; i < cards.size(); j++) {
+        if((colors.get(i).equals(cards.get(j).getColor()))) {
+          colorSum++;
+        }
+      }
+      colorStatus[i] = String.valueOf(colorSum) + " " + colors.get(i);
+    }
+    String status = String.format("%d cards - %s", String.valueOf(cards.size()), String.join(", ", colorStatus));
+  }
+}
+
+      }
 
 
 }
