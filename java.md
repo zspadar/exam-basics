@@ -47,4 +47,17 @@ The application is accepted if:
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[Constructor is a special method, that exsist to construct the object. It will be called, when the object is created. It usually consists of instance variables, a constructor method, and sometimes even with overloaded constructors.]
+[Constructors used in OOP.
+Constructor is a special method, that exsist to construct the object. It will be called, when the object is created. It usually consists of instance variables, a constructor method, and sometimes even with overloaded constructors.
+Constructors can be called from other classes based on the access(public, private, package-private) it should be done slightly diferrently.
+Here is a constructor:
+public class SpaceShip{
+// an empty contructor:
+public[access] Spaceship[class name] () {
+}
+//overloaded contructor:
+public[access] SpaceShip [it has to be identical to the class name] (String n [parameter]) {
+  [initialization code comes here]
+ 
+ }
+}]
