@@ -36,15 +36,15 @@ The application is accepted if:
 
 #### Your answer:
 [add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
-8:   
+1: method declaration  
+2:  return type - every method has it, even void ones, but we just don't make that visible 
+3:  method name
+4:  input paramater, variable type
+5:  input parameter, variable's name
+6:  instantiate variable and assigning value to it 
+7:  method body(if it is an abstract method, at the abstract class the body sould be empty, only at the sublasses should a method have and must be declared
+8:   return value
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+[Constructor is a special method, that exsist to construct the object. It will be called, when the object is created. It usually consists of instance variables, a constructor method, and sometimes even with overloaded constructors.]
