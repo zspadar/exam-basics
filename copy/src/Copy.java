@@ -2,7 +2,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
-
 /**
  * Created by zsuzsanna.padar on 2017. 04. 18..
  */
