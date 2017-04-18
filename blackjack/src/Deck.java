@@ -13,6 +13,7 @@ public class Deck {
     this.cardsFromDeck = cardsFromDeck;
     this.cards = new ArrayList<>();
     createDeck();
+    draw();
   }
 
   private void createDeck() {
@@ -39,6 +40,14 @@ public class Deck {
     }
 
     Collections.shuffle(cards);
+  }
+  public Card draw() {
+    if(cards.size() > 0) {
+      Card card = cards.get(cards.size() - 1);
+      cards.remove(cards.size() -1);
+      return card;
+    }
+    return null;
   }
 
 }
